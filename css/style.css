@@ -1,0 +1,104 @@
+/*******************************************************************************
+Copyright © 2021 Mystaredia Team
+
+Notes:
+  Colors:
+    1 : #121212 (Rich Black ROGRA 39)
+    2 : #181818 (Eerie Black (Background))
+    3 : #282828 (Eerie Black)
+    4 : #88C999  (Eton Blue (Mint))
+*******************************************************************************/
+
+html {
+  margin: auto; 
+  width: 30%;
+  background: #ffffdd;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 7px;
+  border-image: linear-gradient(180deg, rgba(255,255,221,1) 30%, rgba(245,245,210,1) 100%) 1;
+  /*border: 5px solid #f5f5d2;*/
+  background-image: url("https://cdn.glitch.com/68b1bbb5-a5b0-43d1-848b-27c6296c7766%2FTetris-Background.png?v=1625559557104");
+  margin: 10px;
+}
+
+.Score {
+box-shadow: inset 0px 30px 50px -30px #000000;
+border-radius: 25px;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-image: url("https://i.imgur.com/hpPUg7u.png");
+}
+
+.display-next {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  /*border: 5px solid black;*/
+  border-radius: 7px;
+  background: #ffffdd;
+  margin: 10px;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.dButton {
+	box-shadow:inset 0px 0px 15px 3px #7ead68;
+	background:linear-gradient(to bottom, #93c77a 5%, #95c47d 100%);
+	background-color:#93c77a;
+	border-radius:17px;
+	border:1px solid #77a85e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7db05c;
+}
+.dButton:hover {
+	background:linear-gradient(to bottom, #95c47d 5%, #93c77a 100%);
+	background-color:#95c47d;
+}
+.dButton:active {
+	position:relative;
+	top:1px;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
